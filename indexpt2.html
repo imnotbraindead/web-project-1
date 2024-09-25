@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <h1>Who Is the Goat</h1>
+</head><!--intro to the page-->
+<body>
+    <p>
+        <article>
+        One of the biggest factors in this debate is trophies. Trophies are incredibly valuable when debating between 
+        players, especially when talking about Messi and Ronaldo.
+    </p></article>
+    <!-- the title for the table -->
+
+    
+    <table>
+        <tr>
+            <th>Trophies</th>
+            <th>Messi</th>
+            <th>Ronaldo</th>
+        </tr>
+        <tbody>
+            <tr>
+                <td>Ballon d'Or</td>
+                <td>8</td>
+                <td>5</td>
+            </tr>
+            <tr>
+                <td>UCL</td>
+                <td>4</td>
+                <td>5</td>
+            </tr>
+            <tr>
+                <td>World Cup</td>
+                <td>1</td>
+                <td>0</td>
+            </tr>
+        </tbody>
+    </table>
+<!--the table for trophies-->
+<section>
+    <form action="/submit" method="POST">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+        <br/>
+        <label for="email">Email:</label>
+        <input type="email" id="email" required>
+        <br/><!--getting their information for refrence-->
+        <label for="goat">Pick your goat:</label><br/>
+        <label>
+            <input type="radio" name="goat" value="Ronaldo" required>
+            Ronaldo
+        </label>
+        <br/><!--the pick between the two options-->
+        <label>
+            <input type="radio" name="goat" value="Messi">
+            Messi
+        </label>
+        <br/>
+        <label for="color">What color is Manchester:</label><br/>
+        <input type="color" name="color">
+        <br/><!--question 2-->
+        <label for="message">Who is your goat and why:</label>
+        <br/><!--asking who your pick is and why-->
+        <textarea id="message" name="message" rows="4" required></textarea>
+        <br>
+        <button type="submit">Submit</button>
+    </form>
+</section>
+</body>
+</html>
